@@ -21,3 +21,17 @@ void sobelDetect(cv::Mat& inputImg, cv::Mat& outputImg)
     addWeighted( abs_grad_x, 0.5, abs_grad_y, 0.5, 0, outputImg); 
 }
 
+void verticalFilter(cv::Mat& input, cv::Mat& output)
+{  
+    cv::Point anchor = cv::Point {-1, -1};
+    double delta = 0;
+    int ddepth = -1;
+    cv::Mat kernel = cv::Mat::ones(3,3,CV_32F);
+    for (auto i = 0; i < 3; ++i)
+    {
+        kernel.at<double>(0,i) = -1 / 9;
+        kernel.at<double>(1,i) = -2 / 9;
+        kernel.at<double>(2,i) = -1 / 9;
+    }
+    filter2D(input, output, ddepth , kernel, anchor, delta);
+}

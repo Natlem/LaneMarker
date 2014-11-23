@@ -5,5 +5,6 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 void sobelDetect(cv::Mat& inputImg, cv::Mat& outputImg);
+void verticalFilter(cv::Mat& input, cv::Mat& output);
 
 #endif
