@@ -1,2 +1,38 @@
-Lane detection project
+A Lane Marker detection project
 
+
+Requirement
+===========
+
+You will need opencv with a version >= 2.4.8
+
+My build
+========
+
+g++ 4.9.2
+opencv 2.4.10
+cmake 2.8
+
+
+How to build this project
+=========================
+
+-   cd build/
+-   cmake .
+-   make
+
+This will generate a binary named "lm"
+
+How to use
+==========
+
+Two ways to use this program:
+
+-   First, you can give it an image and it will output an image with lanes traced in red.
+-   Second, you can give it a folder of image and it will compute all the x-position of lanes which intercept with the bottom.
+The result will be output in a csv.
+
+Examples:
+
+-   ./lm foo.png
+-   ./lm folder/ output.csv
