@@ -1,13 +1,16 @@
-A Lane Marker detection project
+About
+=====
 
+This goal of this project is to implement an algorithm that detect lane markers.
+This project was really influence by the paper of Thittaporn Ganokratanaa [1].
 
 Requirement
 ===========
 
 You will need opencv with a version >= 2.4.8
 
-My build
-========
+Working Build
+=============
 
 g++ 4.9.2
 opencv 2.4.10
@@ -36,3 +39,18 @@ Examples:
 
 -   ./lm foo.png
 -   ./lm folder/ output.csv
+
+References
+==========
+
+[1] REAL-TIME LANE DETECTION FOR DRIVING SYSTEM USING IMAGE PROCESSING BASED ON EDGE DETECTION AND HOUGH TRANSFORM
+Thittaporn Ganokratanaa
+
+[2] Hough Transform
+http://en.wikipedia.org/wiki/Hough_transform
+
+[3] Canny Edge Detector
+http://en.wikipedia.org/wiki/Canny_edge_detector
+
+[4] Sobel Operator
+http://en.wikipedia.org/wiki/Sobel_operator
