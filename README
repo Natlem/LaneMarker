@@ -32,8 +32,8 @@ How to use
 Two ways to use this program:
 
 -   First, you can give it an image and it will output an image with lanes traced in red.
--   Second, you can give it a folder of image and it will compute all the x-position of lanes which intercept with the bottom.
-The result will be output in a csv.
+-   Second, you can give it a folder of images and it will compute all the x-position of lanes which intercept with the bottom.
+The result will be written in a csv.
 
 Examples:
 
