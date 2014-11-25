@@ -40,6 +40,17 @@ Examples:
 -   ./lm foo.png
 -   ./lm folder/ output.csv
 
+Pipeline
+========
+
+-   Get Image/Folder
+-   Convert Image to Ycbcr colorspace for better edge detection
+-   Apply the Sobel operator to detect edges
+-   Apply another Canny for edge detection
+-   Apply Hough transform to detect lines
+-   Apply some filter to detect lane marker
+-   Write Image/CSV
+
 References
 ==========
 
