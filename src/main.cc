@@ -5,6 +5,11 @@ int main(int argc, char** argv)
     if (argc == 2)
     {
         cv::Mat input = cv::imread(argv[1],CV_LOAD_IMAGE_COLOR);
+        if (input.empty())
+        {
+            std::cerr << "Image not found" << std::endl;
+            return 0;
+        }
         cv::Mat dst = input;
         rgb2Ycbcr2(input, dst);
         sobelDetect(dst,dst);
